@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link rel="stylesheet" href="../landing_page/assets/css/estilos.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="inicio">
+        <div class="texto_inicio">
+            <h1> The Rise and Fall of Ziggy Stardust and the Spiders from Mars</h1>
+            <p>David Bowie</p>
+            <a href="#contacto">Compra</a>
+        </div>
+        <div class="svg-hero" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+            style="height: 100%; width: 100%;">
+            <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                style="stroke: none; fill: rgb(0, 0, 0);"></path>
+        </svg></div>
+    </header>
+
+    <section class="block_image">
+        <div class="slide-contenedor">
+            <div class="miSlider fade">
+                <img src="../landing_page/assets/img/vinilo1.png" alt="">
+            </div>
+            <div class="miSlider fade">
+                <img src="../landing_page/assets/img/vinilo2.png" alt="">
+            </div>
+            <div class="miSlider fade">
+                <img src="../landing_page/assets/img/vinilo3.png" alt="">
+            </div>
+            <div class="direcciones">
+                <a href="#" class="atras" onclick="avanzaSlide(-1)">&#10094;</a>
+                <a href="#" class="adelante" onclick="avanzaSlide(1)">&#10095;</a>
+            </div>
+            <div class="barras">
+                <span class="barra active" onclick="posicionSlide(1)"></span>
+                <span class="barra" onclick="posicionSlide(2)"></span>
+                <span class="barra" onclick="posicionSlide(3)"></span>
+            </div>
+        </div>
+        <div class="block_texto">
+          <h2>Album conceptual</h2>
+          <p>The Rise and Fall of Ziggy Stardust and the Spiders from Mars, es el título del quinto álbum de estudio y el primer álbum conceptual publicado por David Bowie, publicado en el año 1972. Fue el disco con el que el artista consiguió llegar a las grandes audiencias y está considerado uno de los mejores álbumes de su carrera y el más representativo del glam rock.</p>
+          <a href="#contacto">Mas informacion</a>
+        </div>
+    </section>
+
+    <section class="listado">
+        <div>
+            <h3>Lado A</h3>
+            <ol>
+                <li>Five Years</li>
+                <li>Soul Love</li>
+                <li>Moonage Daydream</li>
+                <li>Starman</li>
+                <li>It Ain't Easy</li>
+            </ol>  
+        </div>
+        <div>
+            <h3>Lado B</h3>
+            <ol>
+                <li>Lady Stardust</li>
+                <li>Star</li>
+                <li>Hang On to Yourself</li>
+                <li>Ziggy Stardust</li>
+                <li>Suffragette City</li>
+                <li>Rock 'n' Roll Suicide</li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="block_image">
+        <div class="block_texto2">
+            <h2>David Bowie</h2>
+            <p>David Robert Jones (Londres, 8 de enero de 1947–Nueva York, 10 de enero de 2016), más conocido por su nombre artístico David Bowie,​ fue un músico y compositor británico de rock, quien ejerció a su vez como actor, productor discográfico, arreglista y diseñador gráfico. Figura importante de la música popular durante casi cinco décadas, Bowie es considerado un innovador, en particular por sus trabajos de la década de 1970 y por su peculiar voz, además de la profundidad intelectual de su obra.</p>
+            <a href="#contacto">Mas informacion</a>
+        </div>
+        <div class="slide-contenedor2">
+            <div class="miSlider fade">
+                <img src="../landing_page/assets/img/David-Bowie-red.jpg" alt="">
+            </div>
+            <div class="miSlider fade">
+                <img src="../landing_page/assets/img/David-Bowie-red2.jpg" alt="">
+            </div>
+            <div class="miSlider fade">
+                <img src="../landing_page/assets/img/David-Bowie-red3.jpg" alt="">
+            </div>
+            <div class="direcciones">
+                <a href="#" class="atras" onclick="avanzaSlide(-1)">&#10094;</a>
+                <a href="#" class="adelante" onclick="avanzaSlide(1)">&#10095;</a>
+            </div>
+            <div class="barras">
+                <span class="barra active" onclick="posicionSlide(1)"></span>
+                <span class="barra" onclick="posicionSlide(2)"></span>
+                <span class="barra" onclick="posicionSlide(3)"></span>
+            </div>
+        </div>
+    </section>
+
+    <div class="video">
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/nVhZ-Y9HFnU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    
+
+    <footer class="iconos">
+        <a href="contacto"><i class="fab fa-spotify"></i></a>
+        <a href="contacto"><i class="fab fa-youtube"></i></a>
+        <a href="contacto"><i class="fab fa-github"></i></a>
+    </footer>
+
+    <script src="../landing_page/assets/Js/jquery-3.6.0.min.js"></script>
+    <script src="../landing_page/assets/Js/main.js"></script>
+  
+</body>
+</html>
