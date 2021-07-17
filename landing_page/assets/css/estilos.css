@@ -53,15 +53,6 @@
     width: 100%;
 }
 
-.vinil{
-    display: flex;
-    justify-content: space-between;
-}
-
-.img{
-    margin-left: 85px;
-    justify-content: center;
-}
 
 .slide-contenedor{
     max-width:100%;
@@ -150,17 +141,16 @@
     background-position: center;
     background-size: cover;
     text-align: center;
-
-    max-width:100%;
-    max-height: 100%;
+    max-width:100%;  
     width: 50%;
     height:auto;
     position: relative;
     overflow: hidden;
+    justify-content: space-between;
 }
 .block_texto h2{
     color:rgb(204, 160, 41);
-    margin: 25px;
+    margin: 10px;
     padding: 5px;
 }
 
@@ -168,7 +158,7 @@
     font-size: 15px;
     position: relative;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     color: white;
     margin-bottom: 40px;
 }
@@ -213,22 +203,21 @@
 }
 
 .block_texto2{
-    background-image: linear-gradient(to right, rgba(67, 67, 67, 0.747) 0%, rgba(0, 0, 0, 0.822) 100%), url("../img/bowie2.jpg");
+    background-image: linear-gradient(to right, rgba(67, 67, 67, 0.747) 0%, rgba(0, 0, 0, 0.822) 100%), url("../img/image.jpg");
+    height: 250px;
     background-position: center;
     background-size: cover;
     text-align: center;
-    justify-content: center;
-    max-width:100%;
-    max-height: 100%;
-    width: 50%;
-    height:auto;
     position: relative;
     overflow: hidden;
+    justify-content: space-between;
+    max-width:100%;  
+    width: 100%;
 }
 
 .block_texto2 h2{
     color:rgb(204, 160, 41);
-    margin: 25px;
+    margin: 10px;
     padding: 5px;
 }
 
@@ -236,9 +225,9 @@
     font-size: 15px;
     position: relative;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     color: white;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 .block_texto2 a{
     text-decoration: none;
@@ -248,13 +237,60 @@
     color: white;
 }
 
+img{
+    display: flex;
+    max-width: 100%;
+    margin: 5px;
+}
+
+.gallery{  
+    background: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery_item{
+    cursor: pointer;
+}
+
+.modal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(165, 42, 42, 0.603);
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal_img{
+    width: 80%;
+}
+
+.modal_botom{
+    width: 50px;
+    height: 50px;
+    color:white;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: monospace;
+    line-height: 50px;
+    text-align: center;
+    background-color:  rgb(56, 22, 22);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
 .video{
     background: black;
     padding: 20px;
 }
 
 .video iframe{
-    margin-left: 25%;
+    justify-content: space-around;
 }
 
 .iconos{
